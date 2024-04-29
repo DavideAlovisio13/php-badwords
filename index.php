@@ -9,9 +9,16 @@
     <title>BadWords</title>
 </head>
 <body>
-    <form action="censor.php" method="GET">
-        <input type="text" name="text">
-        <input type="submit">
-    </form>
+    <div class="title">
+        <h1>BadWords</h1>
+    </div>
+    <div class="form">
+        <form action="censor.php" method="GET">
+            <input type="text" name="text">
+            <input type="submit">
+        </form>
+    </div>
+    <div></div>
+
 </body>
 </html>
