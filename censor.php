@@ -1,5 +1,5 @@
 <?php
-    $badWords = ['maledetto', 'cazzo', 'porco', 'stronzo', 'cattivo'];
+    $badWords = ['maledetto', 'cazzo', 'porco', 'stronzo', 'cattivo', 'bastardo', 'cretino'];
     $text = $_GET['text'];
     $UpperCaseFirst = ucfirst($text);
     $censoredText = str_replace($badWords, '***', $UpperCaseFirst);
