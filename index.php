@@ -1,4 +1,7 @@
 <?php
+ $textExample = '...E quel maledetto stronzo di Frank Drebin.... Cazzo, vorrei proprio capire fino a che punto può essere così cattivo !';
+ $textExample2 = 'Guarda chi è qui, il detective con la faccia da stronzo. Non hai mai avuto una possibilità contro di noi maledetto porco...';
+ $textExample3 = 'Hai mai pensato di cambiare mestiere, brutto stronzo? Forse fare il giardiniere sarebbe più adatto alla tua intelligenza .'
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +21,14 @@
             <input type="submit">
         </form>
     </div>
-    <div></div>
+    <div>
+        <h2>Esempi da poter utilizzare:</h2>
+        <ul>
+            <li><?php echo $textExample ?></li>
+            <li><?php echo $textExample2 ?></li>
+            <li><?php echo $textExample3 ?></li>
+        </ul>
+    </div>
 
 </body>
 </html>
