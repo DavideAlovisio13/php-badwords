@@ -1,8 +1,9 @@
 <?php
-    $badWords = ['bad', 'words', 'here'];
+    $badWords = ['', '', ''];
     $text = $_GET['text'];
-    $censoredText = str_replace($badWords, '***', $text);
-    
+    $UpperCaseFirst = ucfirst($text);
+    $censoredText = str_replace($badWords, '***', $UpperCaseFirst);
+    $stringLenght = strlen($censoredText); 
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,8 @@
     <title>censor</title>
 </head>
 <body>
-    <p><? echo $censoredText ?></p>
+    <p>Testo censurato: <? echo $censoredText ?></p>
+    <p>Testo originale: <? echo $UpperCaseFirst ?></p>
+    <p>Lunghezza: <? echo $stringLenght ?></p>
 </body>
 </html>
